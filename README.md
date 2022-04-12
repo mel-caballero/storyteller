@@ -23,6 +23,7 @@ Descripción del proyecto
 
 ## Documentación
 - [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) 
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [jQuery](https://jquery.com/) 
 - [Turn.js](http://www.turnjs.com/) 
 - [Liblouis](http://liblouis.org/)

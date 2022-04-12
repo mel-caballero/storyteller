@@ -6,21 +6,35 @@
   <meta name="description" content="">
   <meta name="author" content="Melanie Caballero">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
   <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
   <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <title>Storyteller</title>
 </head>
 <body class="container">
   <header>
+    <span class='fas fa-universal-access' style="cursor:pointer" onclick="openNav()"> Accesibilidad</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
   </header>
   <main>
     <div class="flipbook-viewport">
       <div class="container">
         <div class="flipbook">
           <div>Page 1</div> 
-          <div>Page 2</div> 
-          <div>Page 3</div> 
+          <div style="padding: 20px;">Pellentesque rhoncus lorem in ante porta, eu pretium eros finibus. Nulla feugiat velit est, id ullamcorper nulla finibus nec. Suspendisse non tincidunt elit, id ultricies felis. Maecenas dictum neque sit amet enim dapibus, nec lacinia ante lacinia. Praesent lobortis sit amet sapien id dignissim. Quisque in orci lorem. Integer volutpat massa nec mi fermentum feugiat. Praesent semper dapibus diam in viverra. Aenean tristique turpis rhoncus ipsum porta lobortis at in erat. Nullam mattis nisl turpis, ac mollis purus volutpat sed. Sed fermentum sodales suscipit. Morbi a faucibus nisi.
+
+            Donec finibus, sapien id efficitur aliquet, lectus felis tincidunt urna, quis laoreet ante nulla ut magna. Donec consequat velit neque, in sollicitudin diam tempor non. Donec sodales urna mauris. Quisque commodo leo mi, et gravida massa bibendum vitae. Etiam quis est nec felis ullamcorper egestas. Duis gravida porttitor dolor sit amet aliquet. Fusce fringilla magna metus, eget fringilla dui ultricies vitae. Sed elementum ut ipsum vel consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</div> 
+          <div style="padding: 20px;">Nunc luctus tempor tempor. Pellentesque eu malesuada ligula. Etiam bibendum dictum nunc, eget volutpat augue tincidunt vitae. Morbi at purus auctor, accumsan metus at, mollis mauris. Cras nisi enim, maximus id elementum nec, vehicula vel justo. Sed feugiat mi vel est porta porttitor vitae in dolor. Nullam quis nulla id diam dictum tristique et dignissim neque. Vivamus euismod eros non ex consectetur, quis porttitor orci convallis. Maecenas sem tellus, condimentum eget nisl laoreet, viverra placerat purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed elementum erat. Pellentesque et massa vulputate, pellentesque est et, scelerisque felis. Donec ac suscipit risus.
+
+            Sed faucibus arcu quam, mollis ultrices ante pellentesque ac. Curabitur elementum leo sit amet tristique aliquet. Etiam consectetur ultricies libero, vitae vulputate lacus. Nam enim sem, egestas eget erat vel, porttitor pretium erat. Nullam dignissim sem eros, aliquam aliquam justo vestibulum ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ut sem in purus condimentum sollicitudin. Praesent et tellus neque. Vivamus ac eros a odio dignissim commodo at eu velit.</div> 
           <div>Page 4</div>
         </div>
       </div>
@@ -63,6 +77,6 @@
   </main>
   <footer>
   </footer>
-  <!--<script src="scripts/scripts.js"></script>-->
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

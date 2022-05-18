@@ -19,9 +19,9 @@
 <body>
 	<header>
     <button onclick="openNav()"><span class='fas fa-universal-access'></span> Menú Accesibilidad</button>
-    //TODO corregir menú superpuesto con libro
+    <!-- TODO corregir menú superpuesto con libro -->
 		<div id="mySidenav" class="sidenav bg-light">
-			<button onclick="closeNav()">X</button>
+			<button type="button" class="btn-close" aria-label="Close" onclick="closeNav()"></button>
       <label for="text-size">Tamaño del texto</label>
 			<select class="form-select" aria-label="Tamaño texto" id="text-size" onchange="$('.book-content').css('font-size', $('#text-size').val() + 'em')">
 				<option value="0.5">Más pequeño</option>
@@ -36,10 +36,9 @@
 				<option value="1.5">Grande</option>
 				<option value="2">Más grande</option>
 			</select>
-			//TODO corregir capitalize
 			<div class="form-check form-switch">
-				<label class="form-check-label" for="capitalize">Mayúsculas</label>
-				<input class="form-check-input" type="checkbox" role="switch" id="capitalize" onchange="if($('#capitalize') == checked){$('.book-content p').css('text-transform', 'capitalize')}else {$('.book-content p').css('text-transform', '')}" />
+				<label class="form-check-label" for="uppercase">Mayúsculas</label>
+				<input class="form-check-input" type="checkbox" role="switch" id="uppercase" onchange="uppercase()"/>
 			</div>
     </div>
   </header>
@@ -70,9 +69,17 @@
 		</div>
 	</main>
 
-	//TODO añadir aria-hidden a las páginas que no se muestran
+	<!-- TODO añadir aria-hidden a las páginas que no se muestran -->
 	<script type="text/javascript">
-
+		function uppercase() {
+			if ($('#uppercase').is(':checked')){
+				$('#uppercase').attr('checked', 'true');
+				$('.book-content p').css('text-transform', '')
+			} else {
+				$('#uppercase').removeAttr('checked');
+				$('.book-content p').css('text-transform', 'uppercase');
+			}
+		}
 		function loadApp() {
 			
 			var flipbook = $('.sj-book');

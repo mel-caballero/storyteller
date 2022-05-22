@@ -46,6 +46,5 @@ Este proyecto está bajo la Licencia ...
 
 ## Agradecimientos
 
-- [Alberto de Areba](https://github.com/Birckin). Gracias por creer en mi desde el principio, por acompañarme y por explicarme las cosas de esa forma que tienes para hacerlo.
-- [Gonzalo Nandez](https://github.com/Gonzalo2310). Gracias por tus mentorías y por acompañarme en este proceso de aprendizaje. Gracias a ti he perdido el miedo a programar.
-- [Ernesto Blanco](https://github.com/bcernesto). Gracias por el asesoramiento y la guía para hacer que este proyecto sea accesible.
+- [Alberto de Areba](https://github.com/Birckin).
+- [Gonzalo Nandez](https://github.com/Gonzalo2310).

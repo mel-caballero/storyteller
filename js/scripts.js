@@ -1,27 +1,23 @@
 function textSize(size) {
-  /*var elements = document.getElementsByClassName("book-content")
-
-  for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
-    element.style.fontSize = size;
-  }*/
-  $('main').css('font-size', size + 'px');
+  $("main").removeClass("size-smaller size-small size-normal size-big size-bigger");
+  $("main").addClass("size-" + size);
 }
 
 function inline(space) {
-  /*var elements = document.getElementsByClassName('book-content')
-
-  for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
-    element.style.lineHeight = space;
-  }*/
-  $('.sj-book').css('line-height', space);
+  $("main").removeClass("line-normal line-big line-bigger");
+  $("main").addClass("line-" + space);
 }
 
 function uppercase() {
-  if ($('#uppercase').is(':checked')){
-    $('main').css('text-transform', 'uppercase');
+  if ($("#uppercase").is(":checked")){
+    $("main").removeClass("size-smaller size-small size-normal size-big size-bigger");
+    $("main").addClass("uppercase");
   } else {
-    $('main').css('text-transform', '');
+    $("main").removeClass("uppercase");
   }
+}
+
+function fontType(font) {
+  $("main").removeClass("font-arial font-lato font-tahoma font-verdana");
+  $("main").addClass("font-" + font);
 }
